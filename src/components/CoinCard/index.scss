@@ -1,0 +1,16 @@
+@import 'styles/theme.scss';
+.coin {
+    &-card {
+        width: 90%;
+        height: 400px;
+        background-image: url(../../assets/images/coin-bg.svg);
+        position: absolute;
+        top: 250px;
+        background-color: $white;
+        box-shadow: $shadow-low;
+        border-radius: 8px;
+    
+    
+    }
+
+}

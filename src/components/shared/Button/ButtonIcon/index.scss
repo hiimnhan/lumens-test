@@ -1,0 +1,15 @@
+@import 'styles/theme.scss';
+.button-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+        width: 50%;
+        height: 50%;
+    }
+}
