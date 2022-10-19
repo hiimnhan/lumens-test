@@ -1,12 +1,12 @@
-import React from "react";
+import React, { ReactNode } from 'react';
 import './index.scss';
 type Props = {
-    title: string;
-}
-export default function PrimaryButton({title}: Props) {
-    return (
-        <div className="primary-button">
-            <span className="primary-button-title">{title}</span>
-        </div>
-    )
+  children: ReactNode;
+};
+export default function PrimaryButton({ children }: Props) {
+  return (
+    <div className="primary-button">
+      <span className="primary-button-title">{children}</span>
+    </div>
+  );
 }

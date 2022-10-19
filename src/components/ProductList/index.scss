@@ -1,0 +1,23 @@
+@import 'styles/theme.scss';
+
+.product {
+  &-name {
+    font-size: 18px;
+    color: $gray-01;
+  }
+  &-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: nowrap;
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+    }
+  }
+}
