@@ -11,7 +11,11 @@
     flex-direction: row;
     gap: 2rem;
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     &-title {
       display: flex;

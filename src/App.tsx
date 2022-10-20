@@ -17,6 +17,7 @@ import Fb2 from 'assets/images/fb/fb2.png';
 
 import Coin from 'assets/icons/coin.svg';
 import { ContentTypo, TextWithIcon } from 'components/shared/Typos';
+import { Footer } from 'components/Footer';
 
 const productLists: ProductListProps[] = [
   {
@@ -86,6 +87,7 @@ function App() {
           <ProductList key={pr.productName} productName={pr.productName} cards={pr.cards} />
         ))}
       </CategoryContainer>
+      <Footer />
     </div>
   );
 }

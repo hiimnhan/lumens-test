@@ -8,21 +8,10 @@ export type CardProps = {
   title: ReactNode | string;
   content: ReactNode | string;
   subContent?: ReactNode | string | null;
-  moving?: number;
 };
-export function Card({
-  imageSource = NoImage,
-  title,
-  content,
-  subContent = null,
-  moving = 0
-}: CardProps) {
+export function Card({ imageSource = NoImage, title, content, subContent = null }: CardProps) {
   return (
-    <div
-      style={{
-        transform: `translate(-${moving * 100}%)`
-      }}
-      className="card-item">
+    <div className="card-item">
       <img className="card-item-image" src={imageSource} alt="card-image" />
       <div className="card-item-content-wrapper">
         <p className="card-item-title">{title}</p>
